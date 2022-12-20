@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Prediction</title>
+</head>
+
+<body style="background-color: rgb(32, 234, 190); text-align: center;font-family:verdana;font-size:15px">
+
+    <h1> Medical Insurance Prediction </h1>
+    <form method="POST" action="/predicted">
+
+        <p>Age:</p>
+        <input type = "text" name = "age" style="font-family:'Courier New'">
+        </select>
+
+        <br>
+        <br>
+
+        <p>Gender:</p>
+        <select name = "gender">
+            <option value = "male">Male</option>
+            <option value = "female">Female</option>
+        </select>
+
+        <br>
+        <br>
+
+        <p>BMI:</p>
+        <input type = "text" name = "bmi">
+        </select>
+
+        <br>
+        <br>
+
+        <p>Children:</p>
+        <input type = "text" name = "children">
+        </select>
+
+        <br>
+        <br>
+
+        <p>Smoker:</p>
+        <label>Yes:</label> <input type = "radio" name= "smoker" value = "yes">
+        <label>No:</label> <input type = "radio" name= "smoker" value = "no">
+
+        <br>
+        <br>
+
+        <p>Region:</p>
+        <select name = "region">
+            <option value = "northeast">Northeast</option>
+            <option value = "southeast">Southeast</option>
+            <option value = "northwest">Northwest</option>
+            <option value = "southwest">Southwest</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p style="font-family:Bell MT"> Your insurance premium charges will be <b> {{ prediction }} /- Rs.</b> Only </p>
+
+
+    </form>
+
+
+</body>
+</html>
